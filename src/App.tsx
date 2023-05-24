@@ -1,27 +1,8 @@
 import React from 'react';
 import './App.css';
+import SoundButton from './SoundButton';
+import AppHeader from './AppHeader';
 
-
-interface SoundButtonProps {
-  soundFile: string;
-}
-
-const SoundButton: React.FC<SoundButtonProps> = ({ soundFile }) => {
-  const handleClick = () => {
-    const audio = new Audio(soundFile);
-    audio.play();
-  };
-
-  return (
-    <button className="sound-button" onClick={handleClick}>
-      💩
-    </button>
-  );
-};
-
-const AppHeader: React.FC = () => {
-  return <h1 className="app-header">Caleb's Fart Box</h1>;
-}
 
 const App: React.FC = () => {
   const soundFiles = [
