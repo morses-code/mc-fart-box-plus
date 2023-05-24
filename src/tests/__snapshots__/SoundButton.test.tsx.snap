@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SoundButton plays audio when clicked 1`] = `
+<div>
+  <button
+    class="sound-button"
+    data-sound-file="test-sound.mp3"
+  >
+    💩
+  </button>
+</div>
+`;

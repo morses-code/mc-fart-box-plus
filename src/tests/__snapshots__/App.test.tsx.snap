@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App renders the app 1`] = `
+<div>
+  <div>
+    <div
+      class="app-header-container"
+    >
+      <h1
+        class="app-header"
+      >
+        Caleb's Fart Box
+      </h1>
+    </div>
+    <div
+      class="app-container"
+    >
+      <button
+        class="sound-button"
+        data-sound-file="sound1.mp3"
+      >
+        💩
+      </button>
+      <button
+        class="sound-button"
+        data-sound-file="sound2.mp3"
+      >
+        💩
+      </button>
+      <button
+        class="sound-button"
+        data-sound-file="sound3.mp3"
+      >
+        💩
+      </button>
+      <button
+        class="sound-button"
+        data-sound-file="sound4.mp3"
+      >
+        💩
+      </button>
+      <button
+        class="sound-button"
+        data-sound-file="sound5.mp3"
+      >
+        💩
+      </button>
+      <button
+        class="sound-button"
+        data-sound-file="sound6.mp3"
+      >
+        💩
+      </button>
+    </div>
+  </div>
+</div>
+`;

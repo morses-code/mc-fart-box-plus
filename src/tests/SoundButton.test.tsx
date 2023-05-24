@@ -7,7 +7,7 @@ describe('SoundButton', () => {
     const soundFile = 'test-sound.mp3';
     const audioPlaySpy = jest.spyOn(window.HTMLMediaElement.prototype, 'play');
 
-    const { getByText } = render(<SoundButton soundFile={soundFile} />);
+    const { container, getByText } = render(<SoundButton soundFile={soundFile} />);
     const buttonElement = getByText('💩');
 
     fireEvent.click(buttonElement);
@@ -15,5 +15,7 @@ describe('SoundButton', () => {
     expect(audioPlaySpy).toHaveBeenCalledTimes(1);
 
     audioPlaySpy.mockRestore();
+
+    expect(container).toMatchSnapshot();
   });
 });

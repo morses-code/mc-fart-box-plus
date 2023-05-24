@@ -3,8 +3,14 @@ import { render, fireEvent } from '@testing-library/react';
 import App from '../App';
 
 describe('App', () => {
+  it('renders the app', () => {
+    const { container } = render(<App />)
+
+    expect(container).toMatchSnapshot();
+  })
+
   it('renders the app header', () => {
-    const { getByText } = render(<App />);
+    const { container, getByText } = render(<App />);
     const headerElement = getByText("Caleb's Fart Box");
     expect(headerElement).toBeInTheDocument();
   });

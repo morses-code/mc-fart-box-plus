@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppHeader renders correctly and matches snapshot 1`] = `
+<h1
+  class="app-header"
+>
+  Caleb's Fart Box
+</h1>
+`;
