@@ -1,98 +1,126 @@
 .App {
-  text-align: center;
+	text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+	height: 40vmin;
+	pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+	.App-logo {
+		animation: App-logo-spin infinite 20s linear;
+	}
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+	background-color: #282c34;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
 }
 
 .App-link {
-  color: #61dafb;
+	color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
 }
 
 .app-header-container {
-  text-align: center;
-  padding: 1rem;
-  background-color: #fff;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  margin-bottom: 1rem;
+	text-align: center;
+	padding: 1rem;
+	background-color: #fff;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+	margin-bottom: 1rem;
 }
 
 .app-header {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  color: #333;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-  
+	font-size: 3rem;
+	margin-bottom: 1rem;
+	color: #333;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .app-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: -1rem;
-  padding-top: 1rem; 
-  padding-bottom: 1rem; 
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: -1rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
 }
 
 .sound-button {
-  font-size: 10rem;
-  margin: 0.5rem;
-  padding: 1rem;
-  width: calc(33.33% - 1rem);
-  max-width: 250px;
-  background-color: #53ac56;
-  color: #fff;
-  border: none;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+	font-size: 10rem;
+	margin: 0.5rem;
+	padding: 1rem;
+	width: calc(33.33% - 1rem);
+	max-width: 250px;
+	background-color: #53ac56;
+	color: #fff;
+	border: none;
+	border-radius: 8px;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
 
 .sound-button:hover {
-  background-color: #45a049;
+	background-color: #45a049;
 }
 
 .sound-button:active {
-  transform: translateY(2px);
-  box-shadow: none;
+	transform: translateY(2px);
+	box-shadow: none;
 }
 
+.navbar {
+	width: 100%;
+	background-color: #f1f1f1;
+}
+
+.navbar ul {
+	list-style-type: none;
+	display: flex;
+	justify-content: space-around;
+	padding: 0;
+	margin: 0;
+}
+
+.navbar li {
+	flex: 1;
+	text-align: center;
+}
+
+.navbar a {
+	display: block;
+	padding: 10px;
+	text-decoration: none;
+	color: #333;
+	font-weight: bold;
+	font-size: 5rem;
+}
+
+.navbar a:hover {
+	background-color: #ddd;
+}
 
 @media (max-width: 600px) {
-  .app-header {
-    font-size: 2rem;
-    margin-bottom: 0.5rem; /* Adjust the bottom margin as needed */
-  }
+	.app-header {
+		font-size: 2rem;
+		margin-bottom: 0.5rem; /* Adjust the bottom margin as needed */
+	}
 
-  .sound-button {
-    width: calc(50% - 1rem);
-  }
+	.sound-button {
+		width: calc(50% - 1rem);
+	}
 }
-

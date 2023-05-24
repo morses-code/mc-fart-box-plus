@@ -12,6 +12,30 @@ exports[`App renders the app 1`] = `
         Caleb's Fart Box
       </h1>
     </div>
+    <nav
+      class="navbar"
+    >
+      <ul>
+        <li>
+          <a
+            class="active"
+            data-testid="set1-button"
+            href="#set0"
+          >
+            💩
+          </a>
+        </li>
+        <li>
+          <a
+            class=""
+            data-testid="set2-button"
+            href="#set1"
+          >
+            😯
+          </a>
+        </li>
+      </ul>
+    </nav>
     <div
       class="app-container"
     >
