@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import './App.css';
-import SoundButton from './SoundButton';
+import '../../style/App.css';
+import SoundButton from '../SoundButton/SoundButton';
 import AppHeader from './AppHeader';
-import NavigationBar from './NavigationBar';
+import NavigationBar from '../NavigationBar/NavigationBar';
 
 const App: React.FC = () => {
 	const soundSets = [
