@@ -22,7 +22,9 @@ describe('App', () => {
 		expect(soundButtons.length).toBe(6);
 
 		soundButtons.forEach((button, index) => {
-			const soundFile = `sound${index + 1}.mp3`;
+			const soundFile = `https://storage.googleapis.com/fart-box-387618.appspot.com/sound${
+				index + 1
+			}.mp3`;
 			expect(button).toHaveAttribute('data-sound-file', soundFile);
 		});
 	});

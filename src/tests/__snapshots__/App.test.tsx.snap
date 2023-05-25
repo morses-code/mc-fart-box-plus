@@ -41,37 +41,37 @@ exports[`App renders the app 1`] = `
     >
       <button
         class="sound-button"
-        data-sound-file="sound1.mp3"
+        data-sound-file="https://storage.googleapis.com/fart-box-387618.appspot.com/sound1.mp3"
       >
         💩
       </button>
       <button
         class="sound-button"
-        data-sound-file="sound2.mp3"
+        data-sound-file="https://storage.googleapis.com/fart-box-387618.appspot.com/sound2.mp3"
       >
         💩
       </button>
       <button
         class="sound-button"
-        data-sound-file="sound3.mp3"
+        data-sound-file="https://storage.googleapis.com/fart-box-387618.appspot.com/sound3.mp3"
       >
         💩
       </button>
       <button
         class="sound-button"
-        data-sound-file="sound4.mp3"
+        data-sound-file="https://storage.googleapis.com/fart-box-387618.appspot.com/sound4.mp3"
       >
         💩
       </button>
       <button
         class="sound-button"
-        data-sound-file="sound5.mp3"
+        data-sound-file="https://storage.googleapis.com/fart-box-387618.appspot.com/sound5.mp3"
       >
         💩
       </button>
       <button
         class="sound-button"
-        data-sound-file="sound6.mp3"
+        data-sound-file="https://storage.googleapis.com/fart-box-387618.appspot.com/sound6.mp3"
       >
         💩
       </button>

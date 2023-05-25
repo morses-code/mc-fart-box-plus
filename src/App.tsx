@@ -5,36 +5,27 @@ import AppHeader from './AppHeader';
 import NavigationBar from './NavigationBar';
 
 const App: React.FC = () => {
-	const soundFiles = [
-		'sound1.mp3',
-		'sound2.mp3',
-		'sound3.mp3',
-		'sound4.mp3',
-		'sound5.mp3',
-		'sound6.mp3',
-	];
-
 	const soundSets = [
 		[
 			['💩'],
 			[
-				'sound1.mp3',
-				'sound2.mp3',
-				'sound3.mp3',
-				'sound4.mp3',
-				'sound5.mp3',
-				'sound6.mp3',
+				'https://storage.googleapis.com/fart-box-387618.appspot.com/sound1.mp3',
+				'https://storage.googleapis.com/fart-box-387618.appspot.com/sound2.mp3',
+				'https://storage.googleapis.com/fart-box-387618.appspot.com/sound3.mp3',
+				'https://storage.googleapis.com/fart-box-387618.appspot.com/sound4.mp3',
+				'https://storage.googleapis.com/fart-box-387618.appspot.com/sound5.mp3',
+				'https://storage.googleapis.com/fart-box-387618.appspot.com/sound6.mp3',
 			],
 		],
 		[
 			['😯'],
 			[
-				'minion1.mp3',
-				'minion2.mp3',
-				'minion3.mp3',
-				'minion4.mp3',
-				'minion5.mp3',
-				'minion6.mp3',
+				'https://storage.googleapis.com/fart-box-387618.appspot.com/minion1.mp3',
+				'https://storage.googleapis.com/fart-box-387618.appspot.com/minion2.mp3',
+				'https://storage.googleapis.com/fart-box-387618.appspot.com/minion3.mp3',
+				'https://storage.googleapis.com/fart-box-387618.appspot.com/minion4.mp3',
+				'https://storage.googleapis.com/fart-box-387618.appspot.com/minion5.mp3',
+				'https://storage.googleapis.com/fart-box-387618.appspot.com/minion6.mp3',
 			],
 		],
 	];

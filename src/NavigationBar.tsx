@@ -1,11 +1,11 @@
 import React from 'react';
 
-interface NavBarProps {
+interface NavigationBarProps {
 	onSetChange: (setIndex: number) => void;
 	soundSets: string[][][];
 	currentSet: number;
 }
-const NavBar: React.FC<NavBarProps> = ({
+const NavigationBar: React.FC<NavigationBarProps> = ({
 	onSetChange,
 	soundSets,
 	currentSet,
@@ -34,4 +34,4 @@ const NavBar: React.FC<NavBarProps> = ({
 	);
 };
 
-export default NavBar;
+export default NavigationBar;
