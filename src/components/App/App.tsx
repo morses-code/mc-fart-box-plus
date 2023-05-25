@@ -30,6 +30,7 @@ const App: React.FC = () => {
 		],
 	];
 	const [currentSet, setCurrentSet] = useState(0);
+	const [audio, setAudio] = useState<HTMLAudioElement | null>(null);
 
 	const handleSetChange = (setIndex: number) => {
 		setCurrentSet(setIndex);
@@ -48,12 +49,14 @@ const App: React.FC = () => {
 			<div className='app-container'>
 				{soundSets[currentSet]
 					.filter((_, index) => index !== 0)
-					.map((soundFile, index) =>
-						soundFile.map((sounds) => (
+					.map((soundFile, setIndex) =>
+						soundFile.map((sounds, buttonIndex) => (
 							<SoundButton
-								key={index}
+								key={`${setIndex}-${buttonIndex}`}
 								soundFile={sounds}
 								text={soundSets[currentSet][0][0]}
+								audio={audio}
+								setAudio={setAudio}
 							/>
 						))
 					)}

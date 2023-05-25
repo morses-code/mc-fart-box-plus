@@ -12,6 +12,7 @@ describe('App', () => {
 	it('renders the app header', () => {
 		const { getByText } = render(<App />);
 		const headerElement = getByText("Caleb's Fart Box");
+
 		expect(headerElement).toBeInTheDocument();
 	});
 
@@ -31,7 +32,6 @@ describe('App', () => {
 
 	it('handleSetChange updates currentSet correctly', () => {
 		const { getByTestId } = render(<App />);
-
 		const set1Button = getByTestId('set1-button');
 		const set2Button = getByTestId('set2-button');
 
@@ -42,5 +42,27 @@ describe('App', () => {
 		fireEvent.click(set2Button);
 		expect(set1Button).not.toHaveClass('active');
 		expect(set2Button).toHaveClass('active');
+	});
+
+	it('plays audio when sound button is clicked', () => {
+		const { container } = render(<App />);
+		const soundButtons = container.querySelectorAll('.sound-button');
+
+		const audioPlaySpy = jest.spyOn(window.HTMLMediaElement.prototype, 'play');
+		const audioPauseSpy = jest.spyOn(
+			window.HTMLMediaElement.prototype,
+			'pause'
+		);
+
+		fireEvent.click(soundButtons[0]);
+
+		expect(audioPlaySpy).toHaveBeenCalledTimes(1);
+
+		fireEvent.click(soundButtons[0]);
+
+		expect(audioPauseSpy).toHaveBeenCalledTimes(1);
+
+		audioPlaySpy.mockRestore();
+		audioPauseSpy.mockRestore();
 	});
 });
