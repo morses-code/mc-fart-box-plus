@@ -117,7 +117,7 @@
 @media (max-width: 600px) {
 	.app-header {
 		font-size: 2rem;
-		margin-bottom: 0.5rem; /* Adjust the bottom margin as needed */
+		margin-bottom: 0.5rem;
 	}
 
 	.sound-button {
