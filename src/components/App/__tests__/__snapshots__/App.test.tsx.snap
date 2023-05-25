@@ -20,7 +20,6 @@ exports[`App renders the app 1`] = `
           <a
             class="active"
             data-testid="set1-button"
-            href="#set0"
           >
             💩
           </a>
@@ -29,7 +28,6 @@ exports[`App renders the app 1`] = `
           <a
             class=""
             data-testid="set2-button"
-            href="#set1"
           >
             😯
           </a>

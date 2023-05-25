@@ -20,7 +20,6 @@ const NavigationBar: React.FC<NavigationBarProps> = ({
 				{soundSets.map((_, index) => (
 					<li key={index}>
 						<a
-							href={`#set${index}`}
 							onClick={() => handleItemClick(index)}
 							data-testid={`set${index + 1}-button`}
 							className={index === currentSet ? 'active' : ''}
