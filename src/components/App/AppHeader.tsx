@@ -11,7 +11,11 @@ import React from 'react';
  * @return {JSX.Element} The rendered AppHeader component.
  */
 const AppHeader: React.FC = () => {
-	return <h1 className='app-header'>Caleb's Fart Box</h1>;
+	return (
+		<div>
+			<h1 className='header'>Fart Box Plus</h1>
+		</div>
+	);
 };
 
 export default AppHeader;

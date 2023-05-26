@@ -57,26 +57,26 @@ const App: React.FC = () => {
 		<div>
 			<div className='app-header-container'>
 				<AppHeader />
-			</div>
-			<NavigationBar
-				onSetChange={handleSetChange}
-				soundSets={soundSets}
-				currentSet={currentSet}
-			/>
-			<div className='app-container'>
-				{soundSets[currentSet]
-					.filter((_, index) => index !== 0)
-					.map((soundFile, setIndex) =>
-						soundFile.map((sounds, buttonIndex) => (
-							<SoundButton
-								key={`${setIndex}-${buttonIndex}`}
-								soundFile={sounds}
-								text={soundSets[currentSet][0][0]}
-								audio={audio}
-								setAudio={setAudio}
-							/>
-						))
-					)}
+				<NavigationBar
+					onSetChange={handleSetChange}
+					soundSets={soundSets}
+					currentSet={currentSet}
+				/>
+				<div className='app-container'>
+					{soundSets[currentSet]
+						.filter((_, index) => index !== 0)
+						.map((soundFile, setIndex) =>
+							soundFile.map((sounds, buttonIndex) => (
+								<SoundButton
+									key={`${setIndex}-${buttonIndex}`}
+									soundFile={sounds}
+									text={soundSets[currentSet][0][0]}
+									audio={audio}
+									setAudio={setAudio}
+								/>
+							))
+						)}
+				</div>
 			</div>
 		</div>
 	);

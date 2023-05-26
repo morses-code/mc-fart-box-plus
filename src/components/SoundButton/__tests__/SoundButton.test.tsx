@@ -3,6 +3,16 @@ import { render, fireEvent } from '@testing-library/react';
 import SoundButton from '../SoundButton';
 
 describe('SoundButton', () => {
+	const mockPlay = jest.fn();
+
+	beforeEach(() => {
+		jest.spyOn(HTMLMediaElement.prototype, 'play').mockImplementation(mockPlay);
+	});
+
+	afterEach(() => {
+		mockPlay.mockRestore();
+	});
+
 	it('plays audio when clicked', () => {
 		const soundFile = 'test-sound.mp3';
 		const audioPlaySpy = jest.spyOn(window.HTMLMediaElement.prototype, 'play');

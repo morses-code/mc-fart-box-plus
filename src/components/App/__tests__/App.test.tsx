@@ -3,6 +3,21 @@ import { render, fireEvent } from '@testing-library/react';
 import App from '../App';
 
 describe('App', () => {
+	const mockPlay = jest.fn();
+	const mockPause = jest.fn();
+
+	beforeEach(() => {
+		jest.spyOn(HTMLMediaElement.prototype, 'play').mockImplementation(mockPlay);
+		jest
+			.spyOn(HTMLMediaElement.prototype, 'pause')
+			.mockImplementation(mockPause);
+	});
+
+	afterEach(() => {
+		mockPlay.mockRestore();
+		mockPause.mockRestore();
+	});
+
 	it('renders the app', () => {
 		const { container } = render(<App />);
 
@@ -11,7 +26,7 @@ describe('App', () => {
 
 	it('renders the app header', () => {
 		const { getByText } = render(<App />);
-		const headerElement = getByText("Caleb's Fart Box");
+		const headerElement = getByText('Fart Box Plus');
 
 		expect(headerElement).toBeInTheDocument();
 	});

@@ -33,10 +33,11 @@ const NavigationBar: React.FC<NavigationBarProps> = ({
 
 	return (
 		<nav className='navbar'>
-			<ul>
+			<ul className='navbar-list'>
 				{soundSets.map((_, index) => (
 					<li key={index}>
 						<a
+							href='#'
 							onClick={() => handleItemClick(index)}
 							data-testid={`set${index + 1}-button`}
 							className={index === currentSet ? 'active' : ''}
