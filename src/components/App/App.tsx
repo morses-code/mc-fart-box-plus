@@ -1,9 +1,19 @@
+/**
+ * @file App.js
+ * @description Contains the main App component and its dependencies.
+ */
+
 import React, { useState } from 'react';
 import '../../style/App.css';
 import SoundButton from '../SoundButton/SoundButton';
 import AppHeader from './AppHeader';
 import NavigationBar from '../NavigationBar/NavigationBar';
 
+/**
+ * @component App
+ * @description The main component of the application.
+ * @returns {JSX.Element} The rendered App component.
+ */
 const App: React.FC = () => {
 	const soundSets = [
 		[
@@ -29,9 +39,16 @@ const App: React.FC = () => {
 			],
 		],
 	];
+
 	const [currentSet, setCurrentSet] = useState(0);
 	const [audio, setAudio] = useState<HTMLAudioElement | null>(null);
 
+	/**
+	 * @function handleSetChange
+	 * @description Updates the current set index when a set item is clicked.
+	 * @param {number} setIndex - The index of the clicked set item.
+	 * @returns {void}
+	 */
 	const handleSetChange = (setIndex: number) => {
 		setCurrentSet(setIndex);
 	};

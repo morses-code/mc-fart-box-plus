@@ -1,3 +1,8 @@
+/**
+ * @file SoundButton.js
+ * @description Contains the SoundButton component.
+ */
+
 import React from 'react';
 
 interface SoundButtonProps {
@@ -7,12 +12,22 @@ interface SoundButtonProps {
 	setAudio: React.Dispatch<React.SetStateAction<HTMLAudioElement | null>>;
 }
 
+/**
+ * @component SoundButton
+ * @param {SoundButtonProps} props - The component props.
+ * @returns {JSX.Element} The rendered SoundButton component.
+ */
 const SoundButton: React.FC<SoundButtonProps> = ({
 	soundFile,
 	text,
 	audio,
 	setAudio,
 }) => {
+	/**
+	 * @function handleClick
+	 * @description Handles the button click event.
+	 * @returns {void}
+	 */
 	const handleClick = () => {
 		const newAudio = new Audio(soundFile);
 
