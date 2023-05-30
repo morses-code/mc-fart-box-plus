@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, fireEvent } from '@testing-library/react';
+import { render, fireEvent, getByAltText } from '@testing-library/react';
 import App from '../App';
 
 describe('App', () => {
@@ -25,8 +25,8 @@ describe('App', () => {
 	});
 
 	it('renders the app header', () => {
-		const { getByText } = render(<App />);
-		const headerElement = getByText('Fart Box Plus');
+		const { getByAltText } = render(<App />);
+		const headerElement = getByAltText('Logo');
 
 		expect(headerElement).toBeInTheDocument();
 	});

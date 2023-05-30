@@ -7,11 +7,11 @@ exports[`App renders the app 1`] = `
       class="app-header-container"
     >
       <div>
-        <h1
-          class="header"
-        >
-          Fart Box Plus
-        </h1>
+        <img
+          alt="Logo"
+          class="header-logo"
+          src="/logo-no-background.png"
+        />
       </div>
       <nav
         class="navbar"

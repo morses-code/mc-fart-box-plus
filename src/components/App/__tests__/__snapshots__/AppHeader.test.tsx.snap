@@ -2,10 +2,10 @@
 
 exports[`AppHeader renders correctly and matches snapshot 1`] = `
 <div>
-  <h1
-    class="header"
-  >
-    Fart Box Plus
-  </h1>
+  <img
+    alt="Logo"
+    class="header-logo"
+    src="/logo-no-background.png"
+  />
 </div>
 `;
