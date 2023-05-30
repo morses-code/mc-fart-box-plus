@@ -1,8 +1,8 @@
 :root {
-	--primary-color: #3cc47c;
-	--secondary-color: #1e392a;
+	--primary-color: #096a2e;
+	--secondary-color: #8abe53;
 	--text-color: #e9c893;
-	--background-color: #f8f8f8;
+	--background-color: #ffffff;
 }
 
 .app-header-container {
@@ -11,19 +11,18 @@
 	margin: 0 auto;
 	padding: 20px;
 	box-sizing: border-box;
+	justify-content: center;
 }
 
 .app-container {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	max-width: 900px;
 	margin: 0 auto;
 	padding: 20px;
 }
 
 .header {
-	font-family: 'Your Chosen Font', sans-serif;
 	font-size: 32px;
 	font-weight: bold;
 	letter-spacing: 2px;
@@ -38,8 +37,13 @@
 	text-align: center;
 }
 
-.navbar {
-	background-color: var(--primary-color);
+.header-logo {
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+	height: auto;
+	padding: 10px 0 10px 0;
+	text-align: center;
 }
 
 .navbar-list {
@@ -48,11 +52,9 @@
 	padding: 0;
 	display: flex;
 	justify-content: center;
-	background-image: linear-gradient(
-		to right,
-		var(--primary-color),
-		var(--secondary-color)
-	);
+	align-items: center;
+	background-color: var(--primary-color);
+	border-radius: 10px;
 }
 
 .navbar-list li {
@@ -60,15 +62,16 @@
 }
 
 .navbar-list li a {
-	font-size: 32px;
+	font-size: 18px;
 	display: block;
 	padding: 10px 20px;
 	text-decoration: none;
+	border-radius: 10px;
+	transition: background-color 0.3s ease;
 }
 
 .navbar-list li a:hover {
 	background-color: var(--secondary-color);
-	color: var(--primary-color);
 }
 
 .sound-button {
@@ -79,7 +82,6 @@
 	height: 100px;
 	font-size: 32px;
 	background-color: var(--primary-color);
-	color: #333;
 	border: none;
 	border-radius: 8px;
 	margin: 10px;
@@ -105,4 +107,9 @@
 		flex-basis: calc(100% - 20px);
 		width: 50%;
 	}
+}
+
+@font-face {
+	font-family: 'Advent Pro Medium';
+	src: url('/public/fonts/Advent-Pro-Medium.ttf');
 }

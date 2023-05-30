@@ -13,7 +13,11 @@ import React from 'react';
 const AppHeader: React.FC = () => {
 	return (
 		<div>
-			<h1 className='header'>Fart Box Plus</h1>
+			<img
+				src='/logo-no-background.png'
+				alt='Logo'
+				className='header-logo'
+			/>
 		</div>
 	);
 };
