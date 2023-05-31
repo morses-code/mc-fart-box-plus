@@ -22,18 +22,17 @@
 	padding: 20px;
 }
 
+.welcome {
+	background-color: var(--primary-color);
+	border-radius: 10px;
+}
+
 .header {
 	font-size: 32px;
 	font-weight: bold;
 	letter-spacing: 2px;
 	line-height: 1.2;
 	color: var(--text-color);
-	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-	background-image: linear-gradient(
-		to right,
-		var(--primary-color),
-		var(--secondary-color)
-	);
 	text-align: center;
 }
 
@@ -68,10 +67,16 @@
 	text-decoration: none;
 	border-radius: 10px;
 	transition: background-color 0.3s ease;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+	text-align: center;
 }
 
 .navbar-list li a:hover {
 	background-color: var(--secondary-color);
+}
+
+.navbar-list li a:visited {
+	color: var(--text-color);
 }
 
 .sound-button {
@@ -95,10 +100,25 @@
 	background-color: var(--secondary-color);
 }
 
+p {
+	padding: 5px;
+	margin: 0.5rem 0;
+	font-size: 1rem;
+	line-height: 1;
+	color: var(--text-color);
+	word-wrap: break-word; /* Enable word wrapping */
+	overflow-wrap: break-word; /* Alternative property for word wrapping */
+}
+
 @media (max-width: 768px) {
 	.sound-button {
 		flex-basis: calc(50% - 20px);
 		width: 50%;
+	}
+
+	p {
+		font-size: 0.9rem;
+		word-wrap: break-word;
 	}
 }
 
@@ -106,6 +126,10 @@
 	.sound-button {
 		flex-basis: calc(100% - 20px);
 		width: 50%;
+	}
+
+	p {
+		font-size: 0.8rem;
 	}
 }
 

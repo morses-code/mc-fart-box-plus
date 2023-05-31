@@ -42,7 +42,7 @@ const NavigationBar: React.FC<NavigationBarProps> = ({
 							data-testid={`set${index + 1}-button`}
 							className={index === currentSet ? 'active' : ''}
 						>
-							{soundSets[index][0]}
+							{soundSets[index][0][1]}
 						</a>
 					</li>
 				))}

@@ -17,7 +17,7 @@ import NavigationBar from '../NavigationBar/NavigationBar';
 const App: React.FC = () => {
 	const soundSets = [
 		[
-			['💩'],
+			['💩', 'Fart Sounds'],
 			[
 				'https://storage.googleapis.com/fart-box-387618.appspot.com/sound1.mp3',
 				'https://storage.googleapis.com/fart-box-387618.appspot.com/sound2.mp3',
@@ -28,7 +28,7 @@ const App: React.FC = () => {
 			],
 		],
 		[
-			['😯'],
+			['😯', 'Minions Sounds'],
 			[
 				'https://storage.googleapis.com/fart-box-387618.appspot.com/minion1.mp3',
 				'https://storage.googleapis.com/fart-box-387618.appspot.com/minion2.mp3',
@@ -57,6 +57,17 @@ const App: React.FC = () => {
 		<div>
 			<div className='app-header-container'>
 				<AppHeader />
+				<div className='welcome'>
+					<p>Welcome to Fart Box Plus!</p>
+					<p>
+						This is a place for gross fart related fun, suitable for everyone.
+					</p>
+					<p>
+						Please enjoy and get in touch with any ideas you would like to see.
+					</p>
+					<p>Use the navigation buttons below to select sound groups</p>
+					<p>This is a virtual sound box for all things gross!</p>
+				</div>
 				<NavigationBar
 					onSetChange={handleSetChange}
 					soundSets={soundSets}
@@ -76,6 +87,12 @@ const App: React.FC = () => {
 								/>
 							))
 						)}
+				</div>
+				<div className='welcome'>
+					<p>Coming soon!</p>
+					<p>Fart related games: </p>
+					<p>Pong</p>
+					<p>Poo Snake</p>
 				</div>
 			</div>
 		</div>
