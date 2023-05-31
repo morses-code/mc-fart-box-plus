@@ -9,7 +9,8 @@ const root = ReactDOM.createRoot(
 );
 root.render(
 	<React.StrictMode>
-		<App />
+		{/*TODO - need start thinking about using redux for state management*/}
+		<App set={null} />
 	</React.StrictMode>
 );
 

@@ -8,7 +8,7 @@ import React from 'react';
 interface NavigationBarProps {
 	onSetChange: (setIndex: number) => void;
 	soundSets: string[][][];
-	currentSet: number;
+	currentSet: number | null;
 }
 
 /**
